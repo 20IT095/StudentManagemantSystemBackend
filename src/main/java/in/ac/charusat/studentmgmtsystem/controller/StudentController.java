@@ -61,4 +61,12 @@ public class StudentController {
         return studentRepository.findAll();
     }
 
+    @GetMapping
+    public String displayWelcomeMessage(){
+        return "<center><h1>Welcome to the Spring Boot Security!!!!</h1></center>";
+    }
+    @GetMapping("/listStudents")
+    public List<Student> getAllStudents() {
+        return studentRepository.findAll();
+
 }
